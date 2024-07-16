@@ -239,6 +239,14 @@
         "rate": 3.6,
         "count": 145
       }
+    },
+    {
+      "title": "Sản phẩm mới 2024",
+      "price": 200,
+      "description": "Đẹp ",
+      "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+      "category": "Điện thoại",
+      "id": 21
     }
   ],
   "users": [
@@ -297,6 +305,13 @@
       "username": "meomeo123",
       "confirmPassword": "123456",
       "id": 10
+    },
+    {
+      "email": "admin222@gmail.com",
+      "password": "$2a$10$EYgcZ0eu.3.VlXMVuALQIeqOqviWYn503Ko3Eu3arioUAgbGBNUMq",
+      "username": "khanhduy",
+      "confirmPassword": "123456",
+      "id": 11
     }
   ]
 }

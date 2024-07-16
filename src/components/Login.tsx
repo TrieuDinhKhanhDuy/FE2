@@ -37,7 +37,9 @@ const Login = () => {
     (async () => {
       try {
         const res = await axios.post("http://localhost:3000/login", data)
-       localStorage.setItem("user", JSON.stringify(res.data))
+        localStorage.setItem("user", JSON.stringify(res.data.user))
+      localStorage.setItem("token", res.data.accessToken);
+     
        alert("đăng nhập thành công")
         navigate("/");
       } catch (error: any) {

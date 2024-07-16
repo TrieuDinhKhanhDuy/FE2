@@ -2,7 +2,7 @@ import { Stack } from "@mui/material";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Product } from "src/interface";
-import Loading from "./loading";
+import Loading from "../../components/loading";
 import ProductCard from "./ProductCart";
 
 function Homepage() {

@@ -1,10 +1,10 @@
+import { Button, Input, Stack, Typography } from "@mui/material";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Button, Container, Input, Stack, Typography } from "@mui/material";
 
 import { Product } from "src/interface";
-import Loading from "./loading";
+import Loading from "../../components/loading";
 
 function ProductDetail() {
   const { id } = useParams();
@@ -47,7 +47,7 @@ function ProductDetail() {
             marginTop={"30px"}
             padding={"0 50px"}
           >
-            <img src={product.image} alt="" width={"500px"} />
+            <img src={product.image} alt="" width={"300px"} style={{objectFit:"cover"}} />
             <Stack gap={3}>
               <Typography component="h1" fontSize={"26px"}>
                 {product.title}
