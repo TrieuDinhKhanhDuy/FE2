@@ -1,0 +1,28 @@
+.product-table td:hover {
+    background-color: #e2e2e2;
+}
+
+.product-table th{
+    text-align: center;
+    
+}
+
+h4{
+    color: rgb(224, 126, 14);
+}
+.product-table img{
+    object-fit: cover;
+}
+.product-table th:nth-child(2),
+.product-table td:nth-child(2) {
+    width: 400px; /* Chiều rộng co dãn */
+    max-width: 500px; /* Độ rộng tối đa */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Hiển thị dấu ... khi vượt quá chiều rộng */
+    white-space: nowrap; /* Không ngắt dòng */
+   
+}
+.product-table button{
+    margin-left: 10px;
+}
+

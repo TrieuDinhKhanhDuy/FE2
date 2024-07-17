@@ -1,0 +1,87 @@
+    /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    
+  }
+  .container {
+    width: 20%;
+  }
+  .sidebar {
+    width: 240px;
+    height: 100%;
+    background-color: white;
+    color: black;
+    padding-top: 20px;
+    margin-left: -12px;
+    display: flex;
+    flex: 0 0 20%;
+    border: 1px solid #393e4344;
+    background-color: #15be6162;
+    
+  }
+  
+  .sidebar-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Khoảng cách dưới của header */
+  position: fixed;
+  margin-left: 10px;
+}
+
+.icon-admin {
+  font-size: 1.5rem; /* Kích thước của icon */
+  margin-right: 10px; /* Khoảng cách phía bên phải của icon */
+}
+
+h2 {
+  font-size: 30px; /* Kích thước của tiêu đề */
+  margin: 0; /* Loại bỏ margin mặc định */
+}
+  
+  .sidebar-content {
+    padding-left: 20px;
+    position:fixed ;
+    margin-top: 55px;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin-bottom: 10px;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    display: block;
+      padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-list li a:hover {
+    background-color: #ea8909;
+    color: blue;
+  }
+   button {
+    width: 200px;
+    color: black;
+}
+.icon-logout {
+  position: absolute;
+  left: 30px;
+  top: 15px;
+}
+
+ 
+  

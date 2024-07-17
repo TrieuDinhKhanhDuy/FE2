@@ -13,6 +13,7 @@ import Joi from "joi";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";
+import Navbar from "src/Layouts/Admin/Navbar";
 import { Product } from "src/interface";
 
 type Props = {
@@ -77,9 +78,24 @@ const EditProduct = ({ onEdit }: Props) => {
   }
 
   return (
-    <Container maxWidth="sm" sx={{ marginTop: "50px" }}>
+    <>
+    <div style={{ display: "flex" }}>
+      <Navbar />
+
+    <Container maxWidth="md" sx={{ marginTop: "20px", height: "683px", marginLeft: "30px", marginRight: "350px" }}>
+      <Typography
+      variant="h4"
+      sx={{ 
+        marginBottom: "10px",
+        fontSize: "28px"
+      }}
+      className="text-danger mt-3 mb-4"
+      >
+        Xin chào Admin, chào mừng bạn quay trở lại!!
+      </Typography>
       <Typography
         variant="h4"
+        sx={{ fontSize: "24px"}}
         align="center"
         gutterBottom
         className="text-primary"
@@ -173,6 +189,8 @@ const EditProduct = ({ onEdit }: Props) => {
         </Button>
       </form>
     </Container>
+    </div>
+    </>
   );
 };
 
